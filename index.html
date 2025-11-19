@@ -777,6 +777,12 @@
             <button class="filter-btn active" data-filter="all">
                 <i class="fas fa-th"></i> Todo
             </button>
+            <button class="filter-btn" data-filter="all">
+                <i class="fa-solid fa-list"></i> Menú del Día
+            </button>
+            <button class="filter-btn" data-filter="promos">
+                <i class="fas fa-star"></i> Promos
+            </button>
             <button class="filter-btn" data-filter="pizzas">
                 <i class="fas fa-pizza-slice"></i> Pizzas
             </button>
@@ -788,10 +794,7 @@
             </button>
             <button class="filter-btn" data-filter="pollos">
                 <i class="fas fa-drumstick-bite"></i> Pollos
-            </button>
-            <button class="filter-btn" data-filter="promos">
-                <i class="fas fa-star"></i> Promos
-            </button>
+            </button>  
             <button class="filter-btn" data-filter="guarniciones">
                 <i class="fas fa-utensils"></i> Guarniciones
             </button>
@@ -802,6 +805,18 @@
     </div>
 
     <div class="container">
+
+
+        <div class="category" data-category="menuduario">
+            <div class="category-header">
+                <h2 class="category-title"><i class="fa-solid fa-list"></i> MENÚ DEL DÍA</h2>
+            </div>
+            <div class="menu-grid">
+                
+            </div>
+        </div>
+
+
         <div class="category" data-category="pizzas">
             <div class="category-header">
                 <h2 class="category-title"><i class="fas fa-pizza-slice"></i> PIZZAS</h2>
@@ -1163,7 +1178,7 @@
                         <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600" alt="Promo 1" class="item-image">
                     </div>
                     <div class="item-content">
-                        <div class="item-name">Pizza Especial + Docena Empanadas de Carne</div>
+                        <div class="item-name">Pizza Especial + 1 Doc. de Emp. de Carne</div>
                         <div class="item-variations">
                             <div class="variation-option" data-price="15000" data-variation="Sin Gaseosa">
                                 <span>Sin Gaseosa</span>
@@ -1186,7 +1201,7 @@
                         <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Promo 2" class="item-image">
                     </div>
                     <div class="item-content">
-                        <div class="item-name">Pizza Muzza + Docena Empanadas de Carne</div>
+                        <div class="item-name">Pizza Muzza + 1 Doc. de Emp. de Carne</div>
                         <div class="item-variations">
                             <div class="variation-option" data-price="14000" data-variation="Sin Gaseosa">
                                 <span>Sin Gaseosa</span>
@@ -1198,6 +1213,85 @@
                             </div>
                         </div>
                         <button class="add-button" onclick="addToCart('Pizza Muzza + Doc. Empanadas de Carne', this)">
+                            <i class="fas fa-cart-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
+                        <img src="./pizzaespecial.jpg" alt="Promo 3" class="item-image">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-name">3 Pizzas Especiales</div>
+                        <div class="item-price">$22.500</div>
+                        <button class="add-button" onclick="addToCart('Promo 3 Pizzas Especiales', this, 22500)">
+                            <i class="fas fa-cart-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
+                        <img src="./pizzaespecial.jpg" alt="Promo 3" class="item-image">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-name">3 Pizzas Muzza</div>
+                        <div class="item-price">$19.500</div>
+                        <button class="add-button" onclick="addToCart('Promo 3 Pizzas Muzza', this, 19500)">
+                            <i class="fas fa-cart-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
+                        <img src="./pizzaespecial.jpg" alt="Promo 3" class="item-image">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-name">3 Pizzas Surtidas</div>
+                        <div class="item-price">$23.500</div>
+                        <button class="add-button" onclick="addToCart('Promo 3 Pizzas Surtidas', this, 23500)">
+                            <i class="fas fa-cart-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
+                        <img src="./pizzaespecial.jpg" alt="Promo 3" class="item-image">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-name">2 Pizzas Muzza + 1 Doc. de Emp. de Carne</div>
+                        <div class="item-price">$19.000</div>
+                        <button class="add-button" onclick="addToCart('2 Pizzas Muzza + 1 Doc. de Emp. de Carne', this, 19000)">
+                            <i class="fas fa-cart-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
+                        <img src="https://i.pinimg.com/1200x/82/04/2f/82042fc63db8ff8eda2015ee560fe54c.jpg" alt="Promo 3" class="item-image">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-name">3 Doc. Empanadas de Carne</div>
+                        <div class="item-variations">
+                            <div class="variation-option" data-price="20000" data-variation="Sin Gaseosa">
+                                <span>Sin Gaseosa</span>
+                                <strong>$20.000</strong>
+                            </div>
+                            <div class="variation-option" data-price="22000" data-variation="Con Gaseosa">
+                                <span>Con Gaseosa</span>
+                                <strong>$22.000</strong>
+                            </div>
+                        </div>
+                        <button class="add-button" onclick="addToCart('3 Docenas de Empanadas de Carne', this)">
                             <i class="fas fa-cart-plus"></i> Agregar
                         </button>
                     </div>
@@ -1252,6 +1346,29 @@
                 <div class="menu-item">
                     <div class="item-image-container">
                         <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
+                        <img src="https://i.pinimg.com/1200x/82/04/2f/82042fc63db8ff8eda2015ee560fe54c.jpg" alt="Promo 4" class="item-image">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-name">1 Doc. de Emp. de Carne + Pizza + Manaos</div>
+                        <div class="item-variations">
+                            <div class="variation-option" data-price="16000" data-variation="Muzza">
+                                <span>Pizza Muzza</span>
+                                <strong>$16.000</strong>
+                            </div>
+                            <div class="variation-option" data-price="17000" data-variation="Especial">
+                                <span>Pizza Especial</span>
+                                <strong>$17.000</strong>
+                            </div>
+                        </div>
+                        <button class="add-button" onclick="addToCart('1 Doc. de Emp. de Carne + Pizza + Manaos', this)">
+                            <i class="fas fa-cart-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
                         <img src="./promo2hambur.jpg" alt="Promo 5" class="item-image">
                     </div>
                     <div class="item-content">
@@ -1267,6 +1384,29 @@
                             </div>
                         </div>
                         <button class="add-button" onclick="addToCart('2 Hamburguesas con Fritas', this)">
+                            <i class="fas fa-cart-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
+                        <img src="./promo2hambur.jpg" alt="Promo 5" class="item-image">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-name">3 Hamburguesas con Fritas</div>
+                        <div class="item-variations">
+                            <div class="variation-option" data-price="22000" data-variation="Sin Gaseosa">
+                                <span>Sin Gaseosa</span>
+                                <strong>$22.000</strong>
+                            </div>
+                            <div class="variation-option" data-price="24000" data-variation="Con Gaseosa">
+                                <span>Con Gaseosa</span>
+                                <strong>$24.000</strong>
+                            </div>
+                        </div>
+                        <button class="add-button" onclick="addToCart('3 Hamburguesas con Fritas', this)">
                             <i class="fas fa-cart-plus"></i> Agregar
                         </button>
                     </div>
@@ -1294,6 +1434,90 @@
                         </button>
                     </div>
                 </div>
+
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
+                        <img src="./promo3lomos.jpg" alt="Promo 6" class="item-image">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-name">3 Lomos con Fritas</div>
+                        <div class="item-variations">
+                            <div class="variation-option" data-price="27000" data-variation="Sin Gaseosa">
+                                <span>Sin Gaseosa</span>
+                                <strong>$27.000</strong>
+                            </div>
+                            <div class="variation-option" data-price="29000" data-variation="Con Gaseosa">
+                                <span>Con Gaseosa</span>
+                                <strong>$29.000</strong>
+                            </div>
+                        </div>
+                        <button class="add-button" onclick="addToCart('3 Lomos con Fritas', this)">
+                            <i class="fas fa-cart-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
+                        <img src="https://i.pinimg.com/1200x/82/04/2f/82042fc63db8ff8eda2015ee560fe54c.jpg" alt="Promo 3" class="item-image">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-name">Pollo con Fritas</div>
+                        <div class="item-variations">
+                            <div class="variation-option" data-price="18000" data-variation="Sin Gaseosa">
+                                <span>Sin Gaseosa</span>
+                                <strong>$18.000</strong>
+                            </div>
+                            <div class="variation-option" data-price="20000" data-variation="Con Gaseosa">
+                                <span>Con Gaseosa</span>
+                                <strong>$20.000</strong>
+                            </div>
+                        </div>
+                        <button class="add-button" onclick="addToCart('Pollo con Fritas', this)">
+                            <i class="fas fa-cart-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
+                        <img src="https://i.pinimg.com/1200x/82/04/2f/82042fc63db8ff8eda2015ee560fe54c.jpg" alt="Promo 3" class="item-image">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-name">Medio Pollo</div>
+                        <div class="item-variations">
+                            <div class="variation-option" data-price="11000" data-variation="Con Fritas">
+                                <span>Con Fritas</span>
+                                <strong>$11.000</strong>
+                            </div>
+                            <div class="variation-option" data-price="11000" data-variation="Con Mixta">
+                                <span>Con Mixta</span>
+                                <strong>$11.000</strong>
+                            </div>
+                        </div>
+                        <button class="add-button" onclick="addToCart('Medio Pollo', this)">
+                            <i class="fas fa-cart-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <div class="promo-badge"><i class="fas fa-fire"></i> Promo</div>
+                        <img src="./pizzaespecial.jpg" alt="Promo 3" class="item-image">
+                    </div>
+                    <div class="item-content">
+                        <div class="item-name">Pollo + 1 Doc. de Emp. de Carne + Gaseosa de 3L</div>
+                        <div class="item-price">$27.000</div>
+                        <button class="add-button" onclick="addToCart('Pollo + 1 Doc. de Emp. de Carne + Gaseosa de 3L', this, 27000)">
+                            <i class="fas fa-cart-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+
             </div>
         </div>
 
